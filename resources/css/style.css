@@ -1,0 +1,718 @@
+/*-------------------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ecf0f1;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+    
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*-------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-------------------------------------------*/
+
+
+.row {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+#main_id {
+    padding: 0 10px;
+}
+
+
+section {
+    outline: none;
+}
+
+section img {
+    
+}
+
+/* ------ HEADINGS ------ */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px; 
+    color: #fa7d09;
+    font-size: 450%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align-last: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*-------------------------------------------*/
+/* MAIN NAVIGATION */
+/*-------------------------------------------*/
+
+#banner {
+    margin: 8px;
+    float: left;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+#main-logo {
+    width: 40px;
+    float: left;
+    transform: rotate(45deg);
+}
+
+#site-name {
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+.fix-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.main-nav {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    border-top: transparent;    
+    background-color: #fff;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.main-nav a:not(.banner-link):link,
+.main-nav a:not(.banner-link):visited {
+    float: left;
+    color: #535c68;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 110%;
+    border: 1px solid #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.main-nav a:not(.banner-link):active,
+.main-nav a:not(.banner-link):hover {
+    border: 1px solid #fa7d09;
+    border-radius: 3px;
+    background-color: #fa7d09;
+    color: #fff;
+}
+
+
+.main-nav-centered div {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-nav-right {
+    float: right;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+.main-nav-right a {
+    margin-right: 20px;
+}
+
+#full:link,
+#full:visited {
+    color: #fff;
+    background-color: #ea6f0f;
+    border: 1px solid #ed6a05;
+    border-radius: 3px;
+}
+
+#ghost:link,
+#ghost:visited {
+    border: 1px solid #fb7813;
+    border-radius: 3px;
+    color: #fb7813;
+    background-color: #fff;
+}
+
+#full:active,
+#full:hover {
+    border: 1px solid #fa7d09;
+    background-color: #fa7d09;
+}
+
+#ghost:active,
+#ghost:hover {
+    color: #fff;    
+    border: 1px solid #fa7d09;
+    background-color: #fa7d09;
+}
+
+.vl {
+    border-left: 2px solid #e3e3e3;
+    height: 45px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+/*-------------------------------------------*/
+/* HEADER */
+/*-------------------------------------------*/
+
+header {
+    background-image: url(img/fruit_salad_laying_strawberry_segments.jpg);
+    background-position: center;
+    height: 85vh;
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.hero-text-box {
+    margin-top: 12%;
+    margin-left: 5%;
+}
+
+#second {
+    margin-top: 30px;
+    margin-left: -10%;
+}
+
+#second-text {
+    font-size: 190%;
+    color: #fff;
+}
+
+#second-text img {
+    width: 25px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.hero-text-box .vl {
+    border: 1px solid #fa7d09;
+    height: 90px;
+    margin-left: 20%;
+}
+
+/*-------------------------------------------*/
+/* MAIN CONTENT */
+/*-------------------------------------------*/
+
+.main-content {
+    margin-top: 50px;
+}
+
+/*-------------------------------------------*/
+/* SECTION WINTER */
+/*-------------------------------------------*/
+
+.main-section {
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #efefef;
+    border-radius: 10px;
+    border-top: 3px solid #3498db;
+    padding: 35px;
+}
+
+.main-section h2:after {
+    background-color: #3498db;
+}
+
+.main-section h3 {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/*-------------------*/
+
+.fruit-img {
+    width: 400px;
+    transform: scale(.95);
+    opacity: 90%;
+    transition: transform 0.5s, opacity .5s;
+    float: left;
+    margin-right: 30px;
+}
+
+.fruit-img:hover {
+    transform: scale(1); 
+    opacity: 100%;
+}
+
+.lemon {
+    height: 300px;
+}
+
+/*-------------------*/
+
+.fruit-talks {
+    overflow: hidden;
+}
+
+.main-section .vl {
+    float: left;
+    height: 267px;;
+    border-left: 2.5px solid #3498db;
+    margin-right: 30px;
+}
+#vl_lemon {
+    height: 300px;
+}
+.about-fruit {
+    line-height: 35px;
+    letter-spacing: 1px;
+    float: left;
+}
+
+/*-------------------*/
+
+.about-fruit b {
+    color: #2980b9;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #2980b9; 
+}
+
+.about-fruit span,
+.aside-winter span {
+    color: #2980b9;
+}
+
+/*-------------------*/
+
+.long-copy {
+    clear: both;
+    margin: 20px 0;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+/*-------------------------------------------*/
+/* SECTION SPRING */
+/*-------------------------------------------*/
+
+.spring {
+    border-top: 3px solid #e84393;
+}
+
+
+
+.spring h2:after {
+    background-color: #e84393;
+}
+
+.spring h3 {
+    color: #8e44ad;
+}
+
+.spring .vl {
+    float: left;
+    height: 267px;;
+    border-left: 2.5px solid #e84393;
+    margin-right: 30px;
+}
+
+#vl_rasp {
+    height: 228px;
+}
+
+.mango {
+    width: 25%;
+}
+
+#vl_man {
+    height: 280px;
+}
+
+.spring .about-fruit b {
+    color: #8e44ad;
+    border-bottom: 2px solid #8e44ad; 
+}
+
+.spring .about-fruit span,
+.spring .aside-winter span {
+    color: #8e44ad;
+}
+
+/*-------------------------------------------*/
+/* SECTION SUMMER */
+/*-------------------------------------------*/
+
+.summer {
+    border-top: 3px solid #f1c40f;
+}
+
+.summer h2:after {
+    background-color: #f1c40f;
+}
+
+.summer h3 {
+    color: #d2aa0c;
+}
+
+.summer .vl {
+    float: left;
+    height: 267px;;
+    border-left: 2.5px solid #f1c40f;
+    margin-right: 30px;
+}
+
+.summer .about-fruit b {
+    color: #d2aa0c;
+    border-bottom: 2px solid #d2aa0c; 
+}
+
+.summer .about-fruit span,
+.summer .aside-winter span {
+    color: #d2aa0c;
+}
+
+/*-------------------------------------------*/
+/* SECTION FALL */
+/*-------------------------------------------*/
+
+.fall {
+    border-top: 3px solid #e74c3c;
+}
+
+.fall h2:after {
+    background-color: #e74c3c;
+}
+
+.fall h3 {
+    color: #c0392b;
+}
+
+.fall .vl {
+    float: left;
+    height: 267px;;
+    border-left: 2.5px solid #e74c3c;
+    margin-right: 30px;
+}
+
+.fall .about-fruit b {
+    color: #c0392b;
+    border-bottom: 2px solid #c0392b; 
+}
+
+.fall .about-fruit span,
+.fall .aside-winter span {
+    color: #c0392b;
+}
+
+
+/*-------------------------------------------*/
+/* ASIDE WINTER */
+/*-------------------------------------------*/
+
+.main-aside {
+    padding: 35px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #efefef;
+    border-radius: 10px;
+    border-right: 3px solid #3498db;
+}
+
+.main-aside h2:after {
+    background-color: #3498db;
+}
+
+.main-aside p {
+    margin: 20px 0;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.main-aside p b {
+    color: #2980b9; 
+}
+
+.main-aside hr {
+    border: 1px solid #e8e8e8;   
+    box-shadow: 0 2px 2px #efefef;
+    border-radius: 50px;
+}
+
+.main-aside img {
+    width: 100%;
+    text-align: center;
+}
+
+.main-aside figure {
+    margin: 30px 0;
+}
+
+/*-------------------------------------------*/
+/* ASIDE SPRING */
+/*-------------------------------------------*/
+
+.sp {
+    border-right: 3px solid #e84393;
+}
+
+.sp h2:after {
+    background-color: #e84393;
+}
+
+.sp p b {
+    color: #8e44ad;
+}
+
+/*-------------------------------------------*/
+/* ASIDE SUMMER */
+/*-------------------------------------------*/
+
+.sum {
+    border-right: 3px solid #f1c40f;
+}
+
+.sum h2:after {
+    background-color: #f1c40f;
+}
+
+.sum p b {
+    color: #d2aa0c;
+}
+
+#vl_blue {
+    height: 300px;
+}
+
+#vl_pec {
+    height: 295px;
+}
+
+#vl_bl {
+    height: 305px;
+}
+/*-------------------------------------------*/
+/* ASIDE FALL */
+/*-------------------------------------------*/
+
+.fl {
+    border-right: 3px solid #e74c3c;
+}
+
+.fl h2:after {
+    background-color: #e74c3c;
+}
+
+.fl p b {
+    color: #c0392b;
+}
+
+#vl_ap {
+    height: 260px;
+}
+
+/*-------------------------------------------*/
+/* FOOTER */
+/*-------------------------------------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    margin-top: 15px;
+}
+
+.left-nav,
+.right-nav {
+    list-style: none;
+}
+
+.left-nav {
+    float: left;
+    margin-top: -20px;
+}
+
+.right-nav {
+    float: right;
+    margin-top: -20px;
+}
+
+.left-nav li,
+.right-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.right-nav li:last-child,
+.social-links li:last-child,
+.left-nav li:last-child {
+    margin-right: 0;
+}
+
+.right-nav li a:link,
+.right-nav li a:visited,
+.left-nav li a:link,
+.left-nav li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.right-nav li a:hover,
+.right-nav li a:active,
+.left-nav li a:hover,
+.left-nav li a:active {
+    color: #e67e22;
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.social-links li {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    padding: 8px;
+}
+
+ion-icon {
+    color: #fff;
+    font-size: 160%;
+}
+
+#git, #twitt, #insta, #rss, #lk {
+    transition: border 0.2s, background-color 0.2s;
+}
+
+#git {
+    border: 1px solid #222; /*3b5998*/
+    background-color: #222;
+}
+
+#git:hover {
+    border: 1px solid #000; /*3b5998*/
+    background-color: #000;
+}
+
+#twitt {
+    border: 1px solid #2795e9;
+    background-color: #2795e9;
+}
+
+#twitt:hover {
+    border: 1px solid #147bc9;
+    background-color: #147bc9;
+}
+
+#insta {
+    background-color: #bc2a8d;
+    border: 1px solid #bc2a8d;
+}
+
+#insta:hover {
+    background-color: #8a3ab9;
+    border: 1px solid #8a3ab9;
+}
+
+#rss {
+    border: 1px solid #ff6600;
+    background-color: #ff6600;   
+}
+
+#rss:hover {
+    border: 1px solid #cc5200;
+    background-color: #cc5200;   
+}
+
+#lk {
+    background-color: #0087c6;
+    border: 1px solid #0087c6;
+}
+
+#lk:hover {
+    background-color: #006fa4;
+    border: 1px solid #006fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center; 
+    margin-top: 30px;
+}
+
+footer span {
+    border-bottom: 1px solid #888;
+    padding-bottom: 3px;
+}
+#id-to-winter,
+#id-to-spring,
+#id-to-summer,
+#id-to-fall {
+    scroll-margin-top: 100px;
+}
